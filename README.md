@@ -1,4 +1,7 @@
-# Set substraction
+
+
+
+# Sets of intervals substraction
 Method to get new list of free intervals from given lists of:
 - A: free intervals 
 - B: taken/occupied intervals 
@@ -32,3 +35,8 @@ New intervals is a set substraction of A / B that do not contain points that bel
 --------- TEST 1 ----------
 true
 ```
+
+## MOTIVATION
+*I cloudn't find efficient algorithm for getting substraction of sets of intervals.*
+
+Instead of looping and working on dynamic lists, project all intervals points on one timeline, sort and go point by point and set flags in order to collect free intervals.
