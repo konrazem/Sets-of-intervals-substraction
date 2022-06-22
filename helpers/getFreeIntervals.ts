@@ -53,17 +53,5 @@ export const getFreeIntervals = (test: ITest) => {
     }
   }
 
-  console.log('-------- TAKEN INTERVALS -----------')
-
-  console.table(test.takenIntervals)
-
-  console.log('-------- FREE INTERVALS -----------')
-
-  console.table(test.freeIntervals)
-
-  console.log('-------- NEW FREE INTERVALS -----------')
-
-  console.table(test.newFreeIntervals)
-
   return isEqual(output, test.newFreeIntervals)
 }

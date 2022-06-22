@@ -33,4 +33,21 @@ export const tests: ITest[] = [
       { start: 16, end: 17 },
     ],
   },
+  {
+    takenIntervals: [
+      {
+        start: 10,
+        end: 12,
+      },
+    ],
+
+    freeIntervals: [
+      {
+        start: 12,
+        end: 13,
+      },
+    ],
+
+    newFreeIntervals: [{ start: 12, end: 13 }],
+  },
 ]
